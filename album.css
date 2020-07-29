@@ -1,0 +1,107 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.fade-in {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        color: blue;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+}
+
+    .grid:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+.grid-col {
+    float: left;
+    width: 50%;
+}
+
+/* hide one middle */
+.grid-col--2 {
+    display: none;
+}
+
+.my-name {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 1.5rem;
+}
+
+@media ( min-width: 768px ) {
+    .grid-col {
+        width: 33.3%;
+    }
+
+    .grid-col--2 {
+        display: block;
+    }
+
+    .my-name {
+        font-size: 2.5rem;
+    }
+}
+
+
+.grid-item {
+    min-height: 100px;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+}
+
+.image-container-wide {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 66.3%;
+    height: 0;
+    height: 0;
+}
+
+.image-container-long {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 150.7%;
+    height: 0;
+    height: 0;
+}
+
+img {
+    max-width: 100%;
+}
